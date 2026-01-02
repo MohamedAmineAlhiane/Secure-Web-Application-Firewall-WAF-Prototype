@@ -1,0 +1,7 @@
+{
+  "waf": {
+    "max_requests": 3,
+    "max_payload_size": 500,
+    "sensitive_endpoints": ["/admin"]
+  }
+}
