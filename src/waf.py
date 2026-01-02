@@ -70,6 +70,21 @@ class WAFEngine:
             reasons.append("Sensitive endpoint access")
 
         decision = self._decide(score)
+        
+        logger.log(
+            logging.INFO if decision == "ALLOW"
+            else logging.WARNING if decision == "LOG"
+            else logging.ERROR,
+            "",
+            extra={
+                "source": request.source,
+                "endpoint": request.endpoint,
+                "score": score,
+                "decision": decision,
+                "reasons": reasons,
+            }
+        )
+        
         return decision, reasons, score
 
     @staticmethod
@@ -99,5 +114,4 @@ if __name__ == "__main__":
 
     for req in test_requests:
         decision, reasons, score = waf.analyze(req)
-        print(f"[{decision}] {req.source} → {req.endpoint} | Score={score} | Reasons={reasons}")
         time.sleep(1)
