@@ -1,5 +1,5 @@
 import time
-from logging
+import logging
 from collections import defaultdict
 from dataclasses import dataclass, field
 from typing import List, Dict
