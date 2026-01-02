@@ -156,6 +156,9 @@ This project demonstrates how a Web Application Firewall can be approached from 
 
 The emphasis on scope definition, threat modeling, and observability reflects real-world security engineering practices, where understanding traffic behavior is as important as enforcing controls. While simplified, the system provides a strong foundation for further exploration and incremental improvement.
 
+## Project Evolution
+This project initially began as a conceptual prototype and evolved into a tested implementation through iterative design and validation.
+
 ## Ethical Notice
 
 This project was developed strictly for educational and defensive purposes.  
