@@ -100,13 +100,6 @@ class WAFEngine:
 # Simulation
 # -----------------------------
 
-if __name__ == "__main__":
-    loader = ConfigLoader()
-    
-waf_config =loader.get_waf_config()
-    config = WAFConfig()
-    waf = WAFEngine(config)
-
     test_requests = [
         Request("1.1.1.1", "/login", "user=test"),
         Request("1.1.1.1", "/login", "user=test"),
