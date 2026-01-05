@@ -225,7 +225,8 @@ The emphasis on scope definition, threat modeling, and observability reflects re
 This project initially began as a conceptual prototype and evolved into a tested implementation through iterative design and validation.
 
 ## License
-MIT License
+This project is licensed under the MIT License – see the LICENSE file for details.
+You are free to use, modify, and distribute this project, but it comes as-is without any warranty.
 
 ## Ethical Notice
 
